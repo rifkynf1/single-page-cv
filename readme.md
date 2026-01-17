@@ -4,7 +4,7 @@ This is a solution to the [Single Page CV](https://roadmap.sh/projects/single-pa
 
 ## 📸 Preview
 
-<img src="https://github.com/user-attachments/assets/5f9c4011-389f-4f49-8aaf-0841754a6e33" alt="CV Preview" width="800">
+<img src="assets/singglepagecv.png" alt="CV Preview" width="800">
 
 ## 🚀 Features
 
