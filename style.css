@@ -1,0 +1,50 @@
+/* style.css - CSS Murni tanpa @apply */
+
+/* Agar scrollbar browser sedikit lebih rapi (opsional) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1; /* slate-300 */
+  border-radius: 20px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background-color: #475569; /* slate-600 */
+}
+
+/* --- ATURAN CETAK (PRINT) --- */
+/* Tekan CTRL + P untuk melihat efeknya */
+@media print {
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+
+  /* Sembunyikan elemen Navigasi/Tombol */
+  button,
+  header div:last-child {
+    display: none !important;
+  }
+
+  /* Pastikan warna background elemen kecil tercetak */
+  .bg-primary\/10 {
+    background-color: #f0f9ff !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Hilangkan shadow & border gelap */
+  * {
+    box-shadow: none !important;
+    border-color: #e2e8f0 !important; /* slate-200 */
+  }
+
+  /* Paksa layout agar muat di kertas */
+  .min-h-screen {
+    min-height: auto !important;
+    display: block !important;
+  }
+}
